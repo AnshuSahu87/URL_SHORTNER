@@ -286,7 +286,7 @@ app.get('/:shortCode', (req, res) => {
 async function startServer() {
   try {
     await initDatabase();
-    app.listen(PORT, "0,0,0,0", () => {
+    app.listen(PORT, () => {
       console.log(`URL Shortener running on http://localhost:${PORT}`);
     });
   } catch (err) {
